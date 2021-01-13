@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Payment</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="app.css">
+
+</head>
+<body>
+
+    <div class="header">
+        <img src="/img/logo.png" alt="customer-logo" class="logoimg">
+        <p class="name">Spencer Store</p>
+        <p class="tag">Online watch store for genuine</p>
+    </div>
+    <div class="content">
+        <form action="">
+            <div class="form-col column">
+                <div class="input-field">
+                    <input id="first_name" required type="text" class="validate" placeholder="">
+                    <label for="first_name">First Name</label>
+                </div>
+                <div class="input-field">
+                    <input id="first_name" required type="text" class="validate" placeholder="">
+                    <label for="last_name">Last Name</label>
+                </div>
+            </div>
+            <div class="form-col">
+                <div class="input-field">
+                    <input id="email" required type="email" class="validate" placeholder="">
+                    <label for="email">Email Address</label>
+                    <span class="helper-text" data-error="Enter a valid email" data-success=""></span>
+                </div>
+            </div>
+            <div class="form-col">
+                <div class="input-field">
+                    <input id="phone" type="tel" class="phone validate" placeholder="" required>
+                    <label for="tel">Phone Number</label>
+                    <span class="helper-text" data-error="Enter a valid phone number" data-success=""></span>
+                </div>
+            </div>
+            <div class="form-col">
+                <div class="input-field">
+                    <input id="phone" type="number" class="phone validate" placeholder="" required>
+                    <label for="phone">Amount to Charge</label>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="footer">
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</body>
+</html>
