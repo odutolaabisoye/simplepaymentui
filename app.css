@@ -220,3 +220,6 @@ p.note span {
     background-position: -10px;
 
 }
+#amount{
+    padding-left: 80px !important;
+}
