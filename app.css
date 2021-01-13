@@ -57,10 +57,18 @@ a {
   border-radius: 5px;
   margin-top: 20px;
   padding: 30px 25px;
+  width: 396px;
   min-width: 300px;
   max-width: 396px;
   box-sizing: border-box;
   /* height: 477px; */
+}
+@media (max-width: 450px) {
+    .content {
+
+    width: 300px;
+
+}
 }
 
 /* form */
