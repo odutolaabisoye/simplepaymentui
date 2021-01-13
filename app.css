@@ -214,3 +214,9 @@ p.note span {
     display: flex;
     align-items: center;
 }
+.amount{
+    background: url(/img/ngng.png);
+    background-repeat: no-repeat;
+    background-position: -10px;
+
+}
