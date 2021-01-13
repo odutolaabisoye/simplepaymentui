@@ -11,15 +11,19 @@ body {
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
   height: 100vh;
   font-family: "Nunito", sans-serif;
+}
+a {
+    color: unset;
+    text-decoration: none;
 }
 .header .logoimg {
   margin: auto;
@@ -49,9 +53,9 @@ body {
   background: #ffffff;
   border: 1px solid #dadada;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 5px;
-  margin-top: 15px;
+  margin-top: 20px;
   padding: 30px 25px;
   min-width: 300px;
   max-width: 396px;
@@ -73,9 +77,9 @@ input {
   box-sizing: border-box !important;
 }
 .input-field {
-    display: -ms-grid;
-    display: flex;
-    flex-direction: column-reverse;
+  display: -ms-grid;
+  display: flex;
+  flex-direction: column-reverse;
 }
 .row {
   margin-bottom: 0;
@@ -88,8 +92,8 @@ input {
   justify-content: space-between !important;
   box-sizing: border-box !important;
 }
-.form-col{
-    margin-bottom: 25px;
+.form-col {
+  margin-bottom: 25px;
 }
 /* label color */
 label {
@@ -100,19 +104,17 @@ label {
   color: #717171;
 }
 .input-field {
-
-    margin-bottom: 0 !important;
+  margin-bottom: 0 !important;
 }
 .input-field input:valid {
   border: 1px solid var(--main-color) !important;
   -webkit-box-shadow: none !important;
-          box-shadow: none !important;
-
+  box-shadow: none !important;
 }
 .invalid {
-    border: 1px solid #FF0000 !important;
-    -webkit-box-shadow: none;
-            box-shadow: none;
+  border: 1px solid #ff0000 !important;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 input:focus + label {
   color: var(--main-color) !important;
@@ -120,25 +122,36 @@ input:focus + label {
 input:focus {
   border: 1px solid var(--main-color) !important;
   outline: none;
-    -webkit-box-shadow: none !important;
-          box-shadow: none !important;
-
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
 }
 
-input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea{
-    margin-bottom: 0 !important;
+input:not([type]),
+input[type="text"]:not(.browser-default),
+input[type="password"]:not(.browser-default),
+input[type="email"]:not(.browser-default),
+input[type="url"]:not(.browser-default),
+input[type="time"]:not(.browser-default),
+input[type="date"]:not(.browser-default),
+input[type="datetime"]:not(.browser-default),
+input[type="datetime-local"]:not(.browser-default),
+input[type="tel"]:not(.browser-default),
+input[type="number"]:not(.browser-default),
+input[type="search"]:not(.browser-default),
+textarea.materialize-textarea {
+  margin-bottom: 0 !important;
 }
 
-.submitbtn{
-    height: 30.46px;
-background: var(--main-color);
-border-radius: 3px;
-width: 100%;
-color: #ffffff;
-border: none !important;
-box-shadow: none !important;
-cursor: pointer;
-outline: none !important;
+.submitbtn {
+  height: 30.46px;
+  background: var(--main-color);
+  border-radius: 3px;
+  width: 100%;
+  color: #ffffff;
+  border: none !important;
+  box-shadow: none !important;
+  cursor: pointer;
+  outline: none !important;
 }
 /* .submitbtn:hover{
 background: #e89c47;
@@ -151,19 +164,45 @@ input::-webkit-inner-spin-button {
 }
 
 /* Firefox */
-input[type=number] {
+input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.footer{
-    font-style: normal;
-font-weight: bold;
-font-size: 12px;
-line-height: 16px;
-text-align: center;
-
+.footer {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
 }
 
-.btn{
-    margin-bottom: 0;
+.btn {
+  margin-bottom: 0;
+}
+
+.activity {
+  text-align: center;
+  padding: 50px 0;
+}
+p.title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+}
+p.note {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+p.note span {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
 }
