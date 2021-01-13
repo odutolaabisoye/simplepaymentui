@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Payment</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
     <link rel="stylesheet" href="app.css">
 
 </head>
 <body>
+    <style>
+        :root{
+            --main-color: #d0934b
+        }
+    </style>
 
     <div class="header">
         <img src="/img/logo.png" alt="customer-logo" class="logoimg">
@@ -21,23 +26,25 @@
                 <div class="input-field">
                     <input id="first_name" required type="text" class="validate" placeholder="">
                     <label for="first_name">First Name</label>
+                    <span class="helper-text" data-error="Enter your first name" data-success=""></span>
                 </div>
                 <div class="input-field">
                     <input id="first_name" required type="text" class="validate" placeholder="">
                     <label for="last_name">Last Name</label>
+                    <span class="helper-text" data-error="Enter your last name" data-success=""></span>
                 </div>
             </div>
             <div class="form-col">
                 <div class="input-field">
-                    <input id="email" required type="email" class="validate" placeholder="">
+                    <input id="email" required type="email" class="validate" placeholder="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
                     <label for="email">Email Address</label>
                     <span class="helper-text" data-error="Enter a valid email" data-success=""></span>
                 </div>
             </div>
             <div class="form-col">
                 <div class="input-field">
-                    <input id="phone" type="tel" class="phone validate" placeholder="" required>
-                    <label for="tel">Phone Number</label>
+                    <input id="phone" type="number" class="phone validate" placeholder="" required>
+                    <label for="phone">Phone Number</label>
                     <span class="helper-text" data-error="Enter a valid phone number" data-success=""></span>
                 </div>
             </div>
@@ -47,12 +54,17 @@
                     <label for="phone">Amount to Charge</label>
                 </div>
             </div>
+            <div class="form-col btn">
+                <div class="input-field">
+                    <input class="submitbtn" type="submit" value="Pay Now">
+                </div>
+            </div>
         </form>
     </div>
     <div class="footer">
-
+        <p>By Spencer Stores</p>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
 
 </body>
 </html>

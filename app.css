@@ -65,17 +65,18 @@ input {
   border: 1px solid #dadada !important;
   border-radius: 3px !important;
   height: 29.29px !important;
-  /* padding: 0 7px !important; */
+  padding: 0 7px !important;
   margin-top: 10px !important;
   font-style: normal !important;
   font-weight: 500 !important;
   font-size: 12px !important;
+  box-sizing: border-box !important;
 }
-/* .input-field {
+.input-field {
     display: -ms-grid;
     display: flex;
     flex-direction: column-reverse;
-} */
+}
 .row {
   margin-bottom: 0;
 }
@@ -85,10 +86,10 @@ input {
   display: grid !important;
   grid-template-columns: 48% 48% !important;
   justify-content: space-between !important;
-  box-sizing: border-box;
+  box-sizing: border-box !important;
 }
 .form-col{
-    margin-bottom: 22px;
+    margin-bottom: 25px;
 }
 /* label color */
 label {
@@ -98,9 +99,12 @@ label {
   line-height: 16px;
   color: #717171;
 }
+.input-field {
 
+    margin-bottom: 0 !important;
+}
 .input-field input:valid {
-  border: 1px solid #d0934b !important;
+  border: 1px solid var(--main-color) !important;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
 
@@ -111,10 +115,10 @@ label {
             box-shadow: none;
 }
 input:focus + label {
-  color: #d0934b !important;
+  color: var(--main-color) !important;
 }
 input:focus {
-  border: 1px solid #d0934b !important;
+  border: 1px solid var(--main-color) !important;
   outline: none;
     -webkit-box-shadow: none !important;
           box-shadow: none !important;
@@ -123,4 +127,43 @@ input:focus {
 
 input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea{
     margin-bottom: 0 !important;
+}
+
+.submitbtn{
+    height: 30.46px;
+background: var(--main-color);
+border-radius: 3px;
+width: 100%;
+color: #ffffff;
+border: none !important;
+box-shadow: none !important;
+cursor: pointer;
+outline: none !important;
+}
+/* .submitbtn:hover{
+background: #e89c47;
+} */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.footer{
+    font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 16px;
+text-align: center;
+
+}
+
+.btn{
+    margin-bottom: 0;
 }
